@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Answer</title>
+    <style>
+        .mybutton{
+            position:absolute;
+            top:81px;
+            left:50px;
+        }​
+    </style>
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+<h1>{{ questiontext }}</h1>
+{% if dropdown == 'yes' %}
+    <button id="clickable">Yes</button>
+    <button id="trick" class="mybutton">No</button>
+{% elif dropdown == 'no' %}
+    <button id="trick" class="mybutton">Yes</button>
+    <button id="clickable">No</button>
+{% endif %}
+</body>
+</html>

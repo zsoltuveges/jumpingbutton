@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question</title>
+</head>
+<body>
+<form action="{{ url_for('question') }}" method="get">
+    <label for="questiontext">Give me a question</label>
+    <textarea name="questiontext" id="questiontext" cols="30" rows="10"></textarea>
+    <select name="dropdown">
+        <option value="yes" selected>Yes</option>
+        <option value="no">No</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
